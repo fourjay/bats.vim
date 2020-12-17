@@ -18,7 +18,8 @@ let s:errorformat = join([
   \ '%-C# (in test file %f\\, line %l)',
   \ '%-C#  %m',
   \ '%-G%.%#',
-  \ '%Z'
+  \ '%Z',
+  \ '%-G%.%#',
   \ ], ',')
 
 execute 'CompilerSet errorformat=' . escape(s:errorformat, ' ')
